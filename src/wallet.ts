@@ -11,7 +11,8 @@ export class Wallet {
     public ethereumWallet: EthereumWallet;
     public nostrPub: string;
 
-    constructor(private mnemonic?: string, private ethPrv?: string, private nostrPrv?: string) {
+    // TODO: make these private
+    constructor(private mnemonic?: string, public ethPrv?: string, public nostrPrv?: string) {
         // check to see if we have either:
         // 1) mnemonic 
         // 2) eth prv and nostr prv 
